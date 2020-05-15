@@ -94,7 +94,7 @@ bool attack(std::vector< Army*> &my_armies, Army *default_army) {
 		printf("You've choosen army  number %d!\n\n", num2 + 1);
 	}
 	else {
-		printf("You will fight with default anamy", num2);
+		printf("You will fight with default enemy");
 	}
 
 	pair<int, int> res = buttle(my_armies[num1], (num2 == -1 ? default_army : my_armies[num2]));
