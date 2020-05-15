@@ -17,10 +17,10 @@ public:
 	virtual double get_accuracy();
 	virtual double get_mood();
 
-	virtual void set_health(unsigned delta);
-	virtual void set_damage(unsigned delta);
-	virtual void set_accuracy(double mult);
-	virtual void set_mood(double mult);
+	virtual void change_health(unsigned delta);
+	virtual void change_damage(unsigned delta);
+	virtual void change_accuracy(double mult);
+	virtual void change_mood(double mult);
 
 	virtual int count_solders();
 	virtual void remove_solders(int);

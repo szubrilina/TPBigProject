@@ -20,19 +20,19 @@ double Solder::get_accuracy() {
 */
 
 
-void Solder::set_mood(double mult) {
+void Solder::change_mood(double mult) {
 	this->mood *= mult;
 }
 
-void Solder::set_health(unsigned delta) {
+void Solder::change_health(unsigned delta) {
 	this->health += delta;
 }
 
-void Solder::set_damage(unsigned delta) {
+void Solder::change_damage(unsigned delta) {
 	this->damage += delta;
 }
 
-void Solder::set_accuracy(double mult) {
+void Solder::change_accuracy(double mult) {
 	this->accuracy *= mult;
 }
 
@@ -49,7 +49,7 @@ unsigned Solder::get_damage() {
 }
 
 double Solder::get_accuracy() {
-	return this->accuracy;
+	return this->accuracy * this->mood;
 }
 
 int Solder::count_solders() {

@@ -1,0 +1,21 @@
+Following commands are available:
+
+- help
+  tooltip for all commands
+
+- add int1 int2 int3
+  create an army of int1 horsemen, int2 footmen and int3 bowmen
+
+- observe
+  observe solders from all armies
+
+- attack int1
+  set the army with number int1 to the war
+  - int2
+    sent army number int2 to fight with army number int1
+			
+- merge int1 int2
+  merge army number int2 into army number int1
+
+- finish
+  finish the game
