@@ -50,22 +50,28 @@ double Army::get_mood() {
 	return sum;
 }
 
-void Army::recover() {
+void Army::change_health(unsigned delta) {
 	for (int i = 0; i < parts.size(); ++i) {
-		parts[i]->set_health(1);
-		parts[i]->set_damage(1);
+		parts[i]->change_health(delta);
 	}
 }
 
-void Army::set_health(unsigned delta) {
+void Army::change_damage(unsigned delta) {
 	for (int i = 0; i < parts.size(); ++i) {
-		parts[i]->set_health(delta);
+		parts[i]->change_damage(delta);
 	}
 }
 
-void Army::set_damage(unsigned delta) {
+
+void Army::change_accuracy(double delta) {
 	for (int i = 0; i < parts.size(); ++i) {
-		parts[i]->set_damage(delta);
+		parts[i]->change_accuracy(delta);
+	}
+}
+
+void Army::change_mood(double delta) {
+	for (int i = 0; i < parts.size(); ++i) {
+		parts[i]->change_mood(delta);
 	}
 }
 

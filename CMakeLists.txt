@@ -24,6 +24,7 @@ Factory.cpp
 Factory.h 
 Army.cpp 
 Army.h
+help.txt
 )
 
 install(TARGETS Main RUNTIME DESTINATION bin)
